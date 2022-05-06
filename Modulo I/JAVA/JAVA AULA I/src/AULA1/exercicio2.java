@@ -10,7 +10,7 @@ public class exercicio2 {
 		Scanner numero= new Scanner(System.in);
 		
 		int n1,n2,n3;
-		int maior, menor;
+		int maior=0;
 		
 		System.out.println("Digite o primeiro número");
 		n1= numero.nextInt();
@@ -19,7 +19,17 @@ public class exercicio2 {
 		System.out.println("Digite o terceiro número");
 		n3= numero.nextInt();	
 		
+		if((n1 > n2) && (n1 > n3))
+	        maior = n1;
+
+	    else if((n2 > n1) && (n2 > n3))
+	        maior = n2;
+
+	    else if((n3 > n1)&&(n3 > n2))
+	        maior = n3;
 		
+		
+		System.out.println("Maior valor = "+ maior);
 		
 
 	}
